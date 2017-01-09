@@ -36,7 +36,6 @@ services:
       - LETSENCRYPT_HOST=${SERVER_DOMAIN}
       - LETSENCRYPT_EMAIL=${LETS_ENCRYPT_EMAIL}
       - SERVER_URL=${SERVER}
-      - DASHBOARD_URL=${DASHBOARD}
       - PAGE_URL=${PAGE}
 
   page:
@@ -50,7 +49,6 @@ services:
       - LETSENCRYPT_HOST=${PAGE_DOMAIN}
       - LETSENCRYPT_EMAIL=${LETS_ENCRYPT_EMAIL}
       - SERVER_URL=${SERVER}
-      - DASHBOARD_URL=${DASHBOARD}
       - PAGE_URL=${PAGE}
 
   watchtower:
